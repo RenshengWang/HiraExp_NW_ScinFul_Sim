@@ -36,6 +36,11 @@ public:
   void Produce_EffDB(int EkinNumTem, double* EkinValueTem,string* SimData_FileNameList,string DBFileName);
   void printProgress (double percentage);
   
+  //the below is only for drawing the Efficiency database.
+  // the TEfficiency only support 1D, 2D efficiency database, so 3D has to be drawn by ourself.
+  TH2D* DrawEff_withFixEkin(double Ekin);
+  TH1D* DrawEff_withFixAngle(double Theta,double Phi);
+  
   ClassDef(NW_Eff_DB,1)
 };
 
