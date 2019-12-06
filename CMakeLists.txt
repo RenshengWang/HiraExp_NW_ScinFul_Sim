@@ -52,13 +52,7 @@ target_link_libraries(Hira_NW ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 # relies on these scripts being in the current working directory.
 #
 set(EXAMPLEB2A_SCRIPTS
-  exampleB2a.out
-  exampleB2.in
-  gui.mac
-  run1.mac
-  run2.mac
-  init_vis.mac
-  vis.mac
+  env.sh
   )
 
 foreach(_script ${EXAMPLEB2A_SCRIPTS})
